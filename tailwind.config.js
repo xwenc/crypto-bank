@@ -1,36 +1,35 @@
+const {
+  fontFamily,
+} = require("tailwindcss/defaultTheme");
+const familyBase = "-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji";
 module.exports = {
-  content: [
-    "./pages/**/*.{html,js,jsx,ts,tsx}",
-    "./components/**/*.{html,js,jsx,ts,tsx}",
+  mode: "jit",
+  purge: [
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
   ],
+  fontFamily: {
+    ...fontFamily,
+    base: familyBase,
+  },
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      colors: {
-        "accent-1": "#FAFAFA",
-        "accent-2": "#EAEAEA",
-        "accent-7": "#333",
-        success: "#0070f3",
-        cyan: "#79FFE1",
-      },
-      spacing: {
-        28: "7rem",
-      },
-      letterSpacing: {
-        tighter: "-.04em",
-      },
-      lineHeight: {
-        tight: 1.2,
-      },
-      fontSize: {
-        "5xl": "2.5rem",
-        "6xl": "2.75rem",
-        "7xl": "4.5rem",
-        "8xl": "6.25rem",
-      },
-      boxShadow: {
-        small: "0 5px 10px rgba(0, 0, 0, 0.12)",
-        medium: "0 8px 30px rgba(0, 0, 0, 0.12)",
+      maxWidth: {
+        5: "1.25rem",
+        10: "2.5rem",
+        20: "5rem",
+        40: "10rem",
       },
     },
+  },  
+  variants: {
+    extend: {
+      backgroundColor: ["even", "odd"],
+      borderWidth: ["last", "focus"],
+      margin: ["last", "first"],
+      padding: ["last", "first"],
+    },
   },
+  plugins: [require("tailwindcss-rtl")],
 };

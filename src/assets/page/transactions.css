@@ -1,0 +1,59 @@
+/* transactions page style */
+.container-width-lg {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-width-sm {
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.transaction-bg-color {
+  background-color: #F8F6F5;
+}
+
+.text-black-default {
+  color: #3b3a38;
+}
+.text-black-dim {
+  color: #93918F;
+}
+.text-black-vdim {
+  color: #c9c5c1;
+}
+
+.mt-3vw {
+  margin-top: 3vw;
+}
+
+.transaction-rich p {
+  font-family: BlancoWeb,Times,serif;
+  max-width: 38rem;
+  font-size: 18px;
+  margin: 1em auto;
+}
+.transaction-rich a {
+  color: #3b3a38;
+  text-decoration-line: underline;
+  text-decoration-color: #93918F;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 0.05em;
+}
+.transaction-rich hr {
+  height: 0;
+  border: none;
+  border-top: 1px solid #c9c5c1;
+  max-width: 15rem;
+  margin: 64px auto;
+}
+.transaction-rich figcaption{
+  margin-top: 10px;
+  color: #93918f;
+  font-size: 14px;
+  text-align: center;
+}
+.transaction-rich img {
+  width: 100%;
+}

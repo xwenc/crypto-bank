@@ -1,0 +1,14 @@
+0 silly argv {
+0 silly argv   _: [ 'bootstrap' ],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': '/Users/andyxiong/work/portfolio/node_modules/.bin/lerna'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/andyxiong/work/portfolio
+3 error Error: Invalid package name "portfolio cms": name can only contain URL-friendly characters
+3 error     at invalidPackageName (/Users/andyxiong/work/portfolio/node_modules/npm-package-arg/npa.js:84:15)
+3 error     at Result.setName (/Users/andyxiong/work/portfolio/node_modules/npm-package-arg/npa.js:119:11)
+3 error     at new Result (/Users/andyxiong/work/portfolio/node_modules/npm-package-arg/npa.js:110:10)
+3 error     at Function.resolve (/Users/andyxiong/work/portfolio/node_modules/npm-package-arg/npa.js:54:15)
+3 error     at new Package (/Users/andyxiong/work/portfolio/node_modules/@lerna/package/index.js:95:26)
+3 error     at /Users/andyxiong/work/portfolio/node_modules/@lerna/project/index.js:207:26

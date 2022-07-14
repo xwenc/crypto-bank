@@ -1,0 +1,20 @@
+// https://openapi.debank.com/docs
+export const API_ENDPOINTS = {
+  CHIAN: "chain",
+  CHAIN_LIST: "chain/list",
+  PROTOCOL: "protocol",
+  PROTOCOL_LIST: "protocol/list",
+  PROTOCOL_TVL: "protocol/tvl",
+  TOKEN: "token",
+  TOKEN_LIST_BY_IDS: "token/list_by_ids",
+  USER_CHAIN_BALANCE: "user/chain_balance",
+  USER_COMPLEX_PROTOCOL_LIST: "user/complex_protocol_list",
+  USER_NFT_LIST: "user/nft_list",
+  USER_PROTOCOL: "user/protocol",
+  USER_SIMPLE_PROTOCOL_LIST: "user/simple_protocol_list",
+  USER_TOKEN: "user/token",
+  USER_TOKEN_AUTHORIZED_LIST: "user/token_authorized_list",
+  USER_TOKEN_LIST: "user/token_list",
+  USER_TOKEN_SEARCH: "user/token_search",
+  USER_TOTAL_BALANCE: "user/total_balance",
+};

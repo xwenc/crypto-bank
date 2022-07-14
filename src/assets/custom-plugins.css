@@ -1,0 +1,57 @@
+/* RC Table */
+.rc-table {
+  @apply border-separate;
+  border-spacing: 0;
+}
+
+.rc-table .rc-table-content,
+.rc-table .rc-table-body,
+.rc-table .rc-table-header {
+  @apply border-0;
+}
+
+.rc-table tr th,
+.rc-table tr td {
+  @apply border-0 border-b border-gray-200;
+}
+
+.rc-table thead.rc-table-thead th {
+  @apply py-3 px-3 text-sm font-semibold border-gray-200 whitespace-nowrap first:ps-4 last:pe-4;
+  background-color: #f7f8f9;
+}
+
+.rc-table tr.rc-table-row:hover {
+  background-color: inherit;
+}
+
+.rc-table tr.rc-table-row td {
+  @apply py-3 px-3 text-sm font-normal first:ps-4 last:pe-4 cursor-default;
+}
+.rc-table tr.rc-table-row td.rc-table-cell-row-hover {
+  @apply bg-gray-100;
+}
+
+.rc-table tr.rc-table-row-level-1 td,
+.rc-table tr.rc-table-row-level-1 td {
+  @apply bg-gray-100;
+}
+
+.rc-table tr.rc-table-row:last-child td {
+  @apply border-b-0;
+}
+
+.rc-table tr.rc-table-expanded-row > td {
+  @apply p-0 whitespace-normal border border-gray-50 bg-gray-200;
+}
+
+.rc-table tr.rc-table-expanded-row tr.rc-table-row {
+  cursor: default;
+}
+
+.rc-table .rc-table-row-expand-icon {
+  @apply inline-flex items-center justify-center;
+}
+
+.rc-table .rc-table-expanded-row-fixed::after {
+  border-width: 0;
+}
